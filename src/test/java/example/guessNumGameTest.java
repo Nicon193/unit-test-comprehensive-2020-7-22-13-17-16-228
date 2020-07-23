@@ -65,4 +65,19 @@ public class guessNumGameTest {
         assertEquals("2A2B",actual);
     }
 
+    @Test
+    void should_return_0A2B_when_guessNum_given_answer_is_1234_guess_is_7623() {
+        //given
+        String actual;
+        String answer ="1234";
+        String guess ="7623";
+
+        //when
+        guessNumGame gNG =new guessNumGame(answer);
+        actual=gNG.guessNum(guess);
+
+        //then
+        assertEquals("0A2B",actual);
+    }
+
 }
