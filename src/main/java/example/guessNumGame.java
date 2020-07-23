@@ -4,6 +4,7 @@ import java.util.HashSet;
 
 public class guessNumGame {
     String answer;
+
     String result="%sA%sB";
 
     public guessNumGame(String answer) {
