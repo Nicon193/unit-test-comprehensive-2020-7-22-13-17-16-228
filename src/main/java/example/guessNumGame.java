@@ -11,6 +11,10 @@ public class guessNumGame {
         this.answer = answer;
     }
 
+    public guessNumGame(generateAnswerByRandom g) {
+        this.answer = g.generateAnswer();
+    }
+
     public String guessNum(String guess) {
 
 
@@ -44,5 +48,9 @@ public class guessNumGame {
             }
         }
         return b;
+    }
+
+    public boolean isGuessVaild(String guess){
+        return false;
     }
 }

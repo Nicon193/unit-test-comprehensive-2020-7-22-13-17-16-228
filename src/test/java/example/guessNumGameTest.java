@@ -95,4 +95,22 @@ public class guessNumGameTest {
         assertEquals("0A0B",actual);
     }
 
+
+    @Test
+    void should_return_true_when_guessNum_given_answer_is_1234_guess_is_7689() {
+        //given
+        String actual;
+        String answer ="1234";
+        String guess ="7689";
+
+        //when
+        guessNumGame gNG =new guessNumGame(answer);
+        actual=gNG.guessNum(guess);
+
+        //then
+        assertEquals("0A0B",actual);
+    }
+
+
+
 }
