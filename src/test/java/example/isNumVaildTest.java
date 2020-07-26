@@ -49,6 +49,20 @@ public class isNumVaildTest {
         //then
         assertEquals(true,isLegal);
 
+    }
+
+    @Test
+    void should_return_false_when_isLegalNum_given_input_is_11234() {
+        //given
+        String input = "11234";
+        boolean isLegal;
+
+        //when
+        isNumVaild judge =new isNumVaild();
+        isLegal =judge.isLegalNum(input);
+
+        //then
+        assertEquals(false,isLegal);
 
     }
 }
