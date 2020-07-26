@@ -13,17 +13,9 @@ public class generateAnswerByRandom implements createAnswer{
         for (int i = 0; i <=9 ; i++) {
             arrayList.add(i);
         }
-        Random random = new Random();
-
+        Collections.shuffle(arrayList);
         for (int i = 0; i <4 ; i++) {
-            Collections.shuffle(arrayList);
-            stringBuilder.append(arrayList.get(0));
-            arrayList.remove(0);
-
-
-//            int index =random.nextInt(arrayList.size());
-//            stringBuilder.append(arrayList.indexOf(index));
-//            arrayList.remove(index);
+            stringBuilder.append(arrayList.get(i));
 
         }
 
