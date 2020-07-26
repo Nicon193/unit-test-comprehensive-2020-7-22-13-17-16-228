@@ -50,7 +50,5 @@ public class guessNumGame {
         return b;
     }
 
-    public boolean isGuessVaild(String guess){
-        return false;
-    }
+
 }

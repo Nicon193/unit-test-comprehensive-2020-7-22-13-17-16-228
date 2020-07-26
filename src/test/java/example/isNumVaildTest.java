@@ -13,7 +13,7 @@ public class isNumVaildTest {
 
         //when
         isNumVaild judge =new isNumVaild();
-        isLegal =judge.isLegalNum();
+        isLegal =judge.isLegalNum(input);
 
         //then
         assertEquals(false,isLegal);
@@ -29,7 +29,7 @@ public class isNumVaildTest {
 
         //when
         isNumVaild judge =new isNumVaild();
-        isLegal =judge.isLegalNum();
+        isLegal =judge.isLegalNum(input);
 
         //then
         assertEquals(false,isLegal);
@@ -44,7 +44,7 @@ public class isNumVaildTest {
 
         //when
         isNumVaild judge =new isNumVaild();
-        isLegal =judge.isLegalNum();
+        isLegal =judge.isLegalNum(input);
 
         //then
         assertEquals(true,isLegal);
