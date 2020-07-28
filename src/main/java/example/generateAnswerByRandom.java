@@ -3,7 +3,7 @@ package example;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class generateAnswerByRandom implements createAnswer{
+public class generateAnswerByRandom implements CreateAnswer {
     private final int answerLength = 4;
     private final int maxNumber = 9;
 
