@@ -18,13 +18,13 @@ public class guessNumGame {
     public String guessNum(String guess) {
 
 
-        int absoluteCorrectNumber=countTotalCorrectNum(guess);
+        int absoluteCorrectNumber= countTotalCorrectNumber(guess);
         int b=countExistNum(guess);
 
         return String.format(result,absoluteCorrectNumber,b-absoluteCorrectNumber);
     }
 
-    public  int countTotalCorrectNum(String guess){
+    public  int countTotalCorrectNumber(String guess){
         int a=0;
         for (int i = 0; i <answer.length() ; i++) {
             if (answer.charAt(i)==guess.charAt(i)){
