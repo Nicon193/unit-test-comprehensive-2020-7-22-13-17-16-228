@@ -35,7 +35,7 @@ public class guessNumGame {
     }
 
     public int countExistNumber(String guess){
-        int b=0;
+        int containsNumber=0;
         HashSet<Character> set= new HashSet<>();
 
         for(char c : answer.toCharArray()){
@@ -44,10 +44,10 @@ public class guessNumGame {
 
         for (int i = 0; i <guess.length() ; i++) {
             if (!set.add(guess.charAt(i))){
-                b++;
+                containsNumber++;
             }
         }
-        return b;
+        return containsNumber;
     }
 
 
