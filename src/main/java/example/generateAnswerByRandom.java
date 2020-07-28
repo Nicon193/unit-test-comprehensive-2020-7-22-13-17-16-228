@@ -5,13 +5,14 @@ import java.util.Collections;
 
 public class generateAnswerByRandom implements createAnswer{
     private final int answerLength = 4;
+    private final int maxNumber = 9;
 
     @Override
     public String generateAnswer() {
         StringBuilder answer =new StringBuilder();
 
         ArrayList<Integer> arrayList = new ArrayList<>();
-        for (int i = 0; i <=9 ; i++) {
+        for (int i = 0; i <= maxNumber; i++) {
             arrayList.add(i);
         }
         Collections.shuffle(arrayList);
