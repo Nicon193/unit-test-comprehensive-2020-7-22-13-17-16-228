@@ -25,13 +25,13 @@ public class guessNumGame {
     }
 
     public  int countTotalCorrectNumber(String guess){
-        int a=0;
+        int absoluteCorrectNumber=0;
         for (int i = 0; i <answer.length() ; i++) {
             if (answer.charAt(i)==guess.charAt(i)){
-                a++;
+                absoluteCorrectNumber++;
             }
         }
-        return a;
+        return absoluteCorrectNumber;
     }
 
     public int countExistNumber(String guess){
