@@ -23,13 +23,13 @@ public class playGame {
 
         while (times >= 1 && scanner.hasNextLine()) {
             String inputLine = scanner.nextLine();
-            String inputNum = inputLine.replace(" ", "");
+            String inputNumber = inputLine.replace(" ", "");
 
-            if (!isNumVaild.isLegalNum(inputNum)) {
+            if (!isNumVaild.isLegalNum(inputNumber)) {
                 System.out.println(WRONG_MESSAGE);
                 times--;
             } else {
-                String output = guessNumGame.guessNum(inputNum);
+                String output = guessNumGame.guessNum(inputNumber);
                 System.out.println(output);
                 if (output.equals(GAME_ANSWER)) {
                     System.out.print(YOU_WIN);
