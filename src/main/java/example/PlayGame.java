@@ -2,7 +2,7 @@ package example;
 
 import java.util.Scanner;
 
-public class playGame {
+public class PlayGame {
 
     private static final String GAME_START = "Game Start";
     private static final String WRONG_MESSAGE = "Wrong Input，Input again";
