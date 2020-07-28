@@ -19,9 +19,9 @@ public class guessNumGame {
 
 
         int absoluteCorrectNumber= countTotalCorrectNumber(guess);
-        int b=countExistNum(guess);
+        int containsNumber=countExistNum(guess);
 
-        return String.format(result,absoluteCorrectNumber,b-absoluteCorrectNumber);
+        return String.format(result,absoluteCorrectNumber,containsNumber-absoluteCorrectNumber);
     }
 
     public  int countTotalCorrectNumber(String guess){
