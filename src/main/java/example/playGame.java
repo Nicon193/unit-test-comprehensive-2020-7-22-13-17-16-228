@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class playGame {
 
     private static final String GAME_START = "Game Start";
+    private static final String WRONG_MESSAGE = "Wrong Input，Input again";
 
     public static void main(String[] args) {
         int times = 6;
@@ -22,7 +23,7 @@ public class playGame {
             String inputNum = inputLine.replace(" ", "");
 
             if (!isNumVaild.isLegalNum(inputNum)) {
-                System.out.println("Wrong Input，Input again");
+                System.out.println(WRONG_MESSAGE);
                 times--;
             } else {
                 String output = guessNumGame.guessNum(inputNum);
