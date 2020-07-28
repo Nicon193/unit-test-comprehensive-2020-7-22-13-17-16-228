@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class isNumVaildTest {
+public class isNumberVaildTest {
     @Test
     void should_return_false_when_isLegalNum_given_input_is_11() {
         //given
@@ -12,7 +12,7 @@ public class isNumVaildTest {
         boolean isLegal;
 
         //when
-        isNumVaild judge =new isNumVaild();
+        IsNumberVaild judge =new IsNumberVaild();
         isLegal =judge.isLegalNum(input);
 
         //then
@@ -28,7 +28,7 @@ public class isNumVaildTest {
         boolean isLegal;
 
         //when
-        isNumVaild judge =new isNumVaild();
+        IsNumberVaild judge =new IsNumberVaild();
         isLegal =judge.isLegalNum(input);
 
         //then
@@ -43,7 +43,7 @@ public class isNumVaildTest {
         boolean isLegal;
 
         //when
-        isNumVaild judge =new isNumVaild();
+        IsNumberVaild judge =new IsNumberVaild();
         isLegal =judge.isLegalNum(input);
 
         //then
@@ -58,7 +58,7 @@ public class isNumVaildTest {
         boolean isLegal;
 
         //when
-        isNumVaild judge =new isNumVaild();
+        IsNumberVaild judge =new IsNumberVaild();
         isLegal =judge.isLegalNum(input);
 
         //then

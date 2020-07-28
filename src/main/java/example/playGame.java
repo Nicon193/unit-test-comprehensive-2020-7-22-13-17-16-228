@@ -14,7 +14,7 @@ public class playGame {
         int times = 6;
         GenerateAnswerByRandom randomAnswer = new GenerateAnswerByRandom();
         String answer = randomAnswer.generateAnswer();
-        isNumVaild isNumVaild = new isNumVaild();
+        IsNumberVaild IsNumberVaild = new IsNumberVaild();
 
         GuessNumGame guessNumGame = new GuessNumGame(answer);
         Scanner scanner = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class playGame {
             String inputLine = scanner.nextLine();
             String inputNumber = inputLine.replace(" ", "");
 
-            if (!isNumVaild.isLegalNum(inputNumber)) {
+            if (!IsNumberVaild.isLegalNum(inputNumber)) {
                 System.out.println(WRONG_MESSAGE);
                 times--;
             } else {

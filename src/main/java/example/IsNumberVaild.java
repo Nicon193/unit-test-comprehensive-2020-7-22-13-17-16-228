@@ -3,7 +3,7 @@ package example;
 import java.util.HashSet;
 import java.util.regex.Pattern;
 
-public class isNumVaild {
+public class IsNumberVaild {
 
     private final String FOUR_NUMBER_PATTERN = "[0-9]{4}";
 
