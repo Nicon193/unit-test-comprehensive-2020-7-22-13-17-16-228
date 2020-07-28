@@ -8,6 +8,7 @@ public class playGame {
     private static final String WRONG_MESSAGE = "Wrong Input，Input again";
     private static final String GAME_ANSWER = "4A0B";
     private static final String YOU_WIN = "you win ";
+    private static final String ANSWER_IS = "answer is ";
 
     public static void main(String[] args) {
         int times = 6;
@@ -39,7 +40,7 @@ public class playGame {
             }
 
         }
-        System.out.println(("answer is " + answer));
+        System.out.println((ANSWER_IS + answer));
 
     }
 }
