@@ -36,14 +36,14 @@ public class guessNumGame {
 
     public int countExistNumber(String guess){
         int containsNumber=0;
-        HashSet<Character> set= new HashSet<>();
+        HashSet<Character> answerSet= new HashSet<>();
 
         for(char number : answer.toCharArray()){
-            set.add(number);
+            answerSet.add(number);
         }
 
         for (int i = 0; i <guess.length() ; i++) {
-            if (!set.add(guess.charAt(i))){
+            if (!answerSet.add(guess.charAt(i))){
                 containsNumber++;
             }
         }
