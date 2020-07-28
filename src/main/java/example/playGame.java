@@ -9,7 +9,6 @@ public class playGame {
         String answer = randomAnswer.generateAnswer();
         isNumVaild isNumVaild = new isNumVaild();
 
-//        System.out.println("answer is "+answer);
         guessNumGame guessNumGame = new guessNumGame(answer);
         Scanner scan = new Scanner(System.in);
 
@@ -18,7 +17,7 @@ public class playGame {
         while (times >= 1 && scan.hasNextLine()) {
             String inputLine = scan.nextLine();
             String inputNum = inputLine.replace(" ", "");
-            // System.out.println(inputNum);
+
             if (!isNumVaild.isLegalNum(inputNum)) {
                 System.out.println("Wrong Input，Input again");
                 times--;
@@ -34,7 +33,6 @@ public class playGame {
             }
 
         }
-
         System.out.println(("answer is " + answer));
 
     }
