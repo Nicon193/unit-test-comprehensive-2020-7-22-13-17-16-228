@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class guessNumGameTest {
+public class GuessNumGameTest {
     @Test
     void should_return_4A0B_when_guessNum_given_answer_is_1234_guess_is_1234() {
         //given
