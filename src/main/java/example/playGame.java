@@ -7,6 +7,7 @@ public class playGame {
     private static final String GAME_START = "Game Start";
     private static final String WRONG_MESSAGE = "Wrong Input，Input again";
     private static final String GAME_ANSWER = "4A0B";
+    private static final String YOU_WIN = "you win ";
 
     public static void main(String[] args) {
         int times = 6;
@@ -30,7 +31,7 @@ public class playGame {
                 String output = guessNumGame.guessNum(inputNum);
                 System.out.println(output);
                 if (output.equals(GAME_ANSWER)) {
-                    System.out.print("you win ");
+                    System.out.print(YOU_WIN);
                     break;
                 }
                 times--;
