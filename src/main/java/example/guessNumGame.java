@@ -19,7 +19,7 @@ public class guessNumGame {
 
 
         int absoluteCorrectNumber= countTotalCorrectNumber(guess);
-        int containsNumber=countExistNum(guess);
+        int containsNumber= countExistNumber(guess);
 
         return String.format(result,absoluteCorrectNumber,containsNumber-absoluteCorrectNumber);
     }
@@ -34,7 +34,7 @@ public class guessNumGame {
         return a;
     }
 
-    public int countExistNum(String guess){
+    public int countExistNumber(String guess){
         int b=0;
         HashSet<Character> set= new HashSet<>();
 
