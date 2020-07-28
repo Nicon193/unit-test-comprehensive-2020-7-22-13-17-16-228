@@ -38,8 +38,8 @@ public class guessNumGame {
         int containsNumber=0;
         HashSet<Character> set= new HashSet<>();
 
-        for(char c : answer.toCharArray()){
-            set.add(c);
+        for(char number : answer.toCharArray()){
+            set.add(number);
         }
 
         for (int i = 0; i <guess.length() ; i++) {
