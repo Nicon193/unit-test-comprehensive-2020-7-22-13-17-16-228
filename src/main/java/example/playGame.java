@@ -10,12 +10,12 @@ public class playGame {
         isNumVaild isNumVaild = new isNumVaild();
 
         guessNumGame guessNumGame = new guessNumGame(answer);
-        Scanner scan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Game Start");
 
-        while (times >= 1 && scan.hasNextLine()) {
-            String inputLine = scan.nextLine();
+        while (times >= 1 && scanner.hasNextLine()) {
+            String inputLine = scanner.nextLine();
             String inputNum = inputLine.replace(" ", "");
 
             if (!isNumVaild.isLegalNum(inputNum)) {
