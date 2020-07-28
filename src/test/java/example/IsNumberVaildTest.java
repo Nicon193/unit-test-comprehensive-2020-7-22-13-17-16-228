@@ -2,9 +2,9 @@ package example;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class isNumberVaildTest {
+public class IsNumberVaildTest {
     @Test
     void should_return_false_when_isLegalNum_given_input_is_11() {
         //given
@@ -32,7 +32,7 @@ public class isNumberVaildTest {
         isLegal =judge.isLegalNum(input);
 
         //then
-        assertEquals(false,isLegal);
+        assertFalse(isLegal);
 
     }
 
@@ -47,7 +47,7 @@ public class isNumberVaildTest {
         isLegal =judge.isLegalNum(input);
 
         //then
-        assertEquals(true,isLegal);
+        assertTrue(isLegal);
 
     }
 
@@ -62,7 +62,7 @@ public class isNumberVaildTest {
         isLegal =judge.isLegalNum(input);
 
         //then
-        assertEquals(false,isLegal);
+        assertFalse(isLegal);
 
     }
 }
