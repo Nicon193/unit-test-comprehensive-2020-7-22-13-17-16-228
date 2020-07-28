@@ -18,10 +18,10 @@ public class guessNumGame {
     public String guessNum(String guess) {
 
 
-        int a=countTotalCorrectNum(guess);
+        int absoluteCorrectNumber=countTotalCorrectNum(guess);
         int b=countExistNum(guess);
 
-        return String.format(result,a,b-a);
+        return String.format(result,absoluteCorrectNumber,b-absoluteCorrectNumber);
     }
 
     public  int countTotalCorrectNum(String guess){
