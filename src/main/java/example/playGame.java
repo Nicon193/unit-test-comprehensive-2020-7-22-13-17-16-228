@@ -3,6 +3,9 @@ package example;
 import java.util.Scanner;
 
 public class playGame {
+
+    private static final String GAME_START = "Game Start";
+
     public static void main(String[] args) {
         int times = 6;
         generateAnswerByRandom randomAnswer = new generateAnswerByRandom();
@@ -12,7 +15,7 @@ public class playGame {
         guessNumGame guessNumGame = new guessNumGame(answer);
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Game Start");
+        System.out.println(GAME_START);
 
         while (times >= 1 && scanner.hasNextLine()) {
             String inputLine = scanner.nextLine();
