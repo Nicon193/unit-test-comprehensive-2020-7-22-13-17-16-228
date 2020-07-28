@@ -2,11 +2,11 @@ package example;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.regex.Pattern;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class generateAnswerByRandomTest {
     @Test
@@ -17,7 +17,7 @@ public class generateAnswerByRandomTest {
         boolean isNotRepeat;
         HashSet<Character> set = new HashSet<>();
         Pattern pattern =Pattern.compile("[0-9]{4}");
-        generateAnswerByRandom randomAnswer =new generateAnswerByRandom();
+        GenerateAnswerByRandom randomAnswer =new GenerateAnswerByRandom();
 
         String answer = randomAnswer.generateAnswer();
 
@@ -32,6 +32,6 @@ public class generateAnswerByRandomTest {
 
         isVaild=isFourNum && isNotRepeat;
 
-       assertEquals(true,isVaild) ;
+        assertTrue(isVaild);
     }
 }

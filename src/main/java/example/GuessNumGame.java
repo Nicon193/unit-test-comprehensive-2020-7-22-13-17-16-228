@@ -2,16 +2,16 @@ package example;
 
 import java.util.HashSet;
 
-public class guessNumGame {
+public class GuessNumGame {
     String answer;
 
     String result="%sA%sB";
 
-    public guessNumGame(String answer) {
+    public GuessNumGame(String answer) {
         this.answer = answer;
     }
 
-    public guessNumGame(generateAnswerByRandom g) {
+    public GuessNumGame(GenerateAnswerByRandom g) {
         this.answer = g.generateAnswer();
     }
 

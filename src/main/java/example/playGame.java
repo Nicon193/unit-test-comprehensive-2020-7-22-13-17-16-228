@@ -12,11 +12,11 @@ public class playGame {
 
     public static void main(String[] args) {
         int times = 6;
-        generateAnswerByRandom randomAnswer = new generateAnswerByRandom();
+        GenerateAnswerByRandom randomAnswer = new GenerateAnswerByRandom();
         String answer = randomAnswer.generateAnswer();
         isNumVaild isNumVaild = new isNumVaild();
 
-        guessNumGame guessNumGame = new guessNumGame(answer);
+        GuessNumGame guessNumGame = new GuessNumGame(answer);
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(GAME_START);

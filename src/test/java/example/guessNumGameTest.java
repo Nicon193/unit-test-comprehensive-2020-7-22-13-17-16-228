@@ -13,7 +13,7 @@ public class guessNumGameTest {
         String guess ="1234";
 
         //when
-        guessNumGame gNG =new guessNumGame(answer);
+        GuessNumGame gNG =new GuessNumGame(answer);
         actual=gNG.guessNum(guess);
 
         //then
@@ -28,7 +28,7 @@ public class guessNumGameTest {
         String guess ="4321";
 
         //when
-        guessNumGame gNG =new guessNumGame(answer);
+        GuessNumGame gNG =new GuessNumGame(answer);
         actual=gNG.guessNum(guess);
 
         //then
@@ -43,7 +43,7 @@ public class guessNumGameTest {
         String guess ="1563";
 
         //when
-        guessNumGame gNG =new guessNumGame(answer);
+        GuessNumGame gNG =new GuessNumGame(answer);
         actual=gNG.guessNum(guess);
 
         //then
@@ -58,7 +58,7 @@ public class guessNumGameTest {
         String guess ="1324";
 
         //when
-        guessNumGame gNG =new guessNumGame(answer);
+        GuessNumGame gNG =new GuessNumGame(answer);
         actual=gNG.guessNum(guess);
 
         //then
@@ -73,7 +73,7 @@ public class guessNumGameTest {
         String guess ="7623";
 
         //when
-        guessNumGame gNG =new guessNumGame(answer);
+        GuessNumGame gNG =new GuessNumGame(answer);
         actual=gNG.guessNum(guess);
 
         //then
@@ -88,7 +88,7 @@ public class guessNumGameTest {
         String guess ="7689";
 
         //when
-        guessNumGame gNG =new guessNumGame(answer);
+        GuessNumGame gNG =new GuessNumGame(answer);
         actual=gNG.guessNum(guess);
 
         //then
@@ -104,7 +104,7 @@ public class guessNumGameTest {
         String guess ="7689";
 
         //when
-        guessNumGame gNG =new guessNumGame(answer);
+        GuessNumGame gNG =new GuessNumGame(answer);
         actual=gNG.guessNum(guess);
 
         //then
