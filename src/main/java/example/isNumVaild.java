@@ -11,16 +11,16 @@ public class isNumVaild {
         boolean isVaild ;
         boolean isFourNum;
         boolean isNotRepeat;
-        HashSet<Character> set = new HashSet<>();
+        HashSet<Character> inputSet = new HashSet<>();
         Pattern pattern =Pattern.compile(FOUR_NUMBER_PATTERN);
 
         isFourNum =pattern.matcher(input).matches();
 
         for (int i = 0; i <input.length() ; i++) {
-            set.add(input.charAt(i));
+            inputSet.add(input.charAt(i));
         }
 
-        isNotRepeat= set.size() == input.length();
+        isNotRepeat= inputSet.size() == input.length();
 
         isVaild=isFourNum && isNotRepeat;
         return  isVaild;
